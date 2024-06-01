@@ -5,7 +5,26 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'primary': ['SuisseIntl-Regular'],
+        'secondary': ['Open Sans'],
+        'third': ['Montserrat'],
+        
+      },
+      colors: {
+        'primary': '#1E2127',
+        'secondary': '#767676',
+        'third': '#E614FC',
+        'body': '#1E1E1E',
+        'gradF': '#FC00FF',
+        'gradT': '#00DBFF',
+        
+      },
+      maxWidth: {
+        'container': '1600px',
+      }
+    },
   },
   plugins: [],
 }

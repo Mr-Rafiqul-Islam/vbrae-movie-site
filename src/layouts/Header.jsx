@@ -1,13 +1,12 @@
 import React from 'react'
 import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
-import heart from '../assets/icons/heart (1).svg'
-import dollar from '../assets/icons/Subtração 165.svg'
-import bag from '../assets/icons/Subtraction 124.svg'
-import userIcon from '../assets/icons/path0.svg'
 import Image from '../components/Image'
 import Button from '../components/Button'
 import Bag from '../assets/icons/Bag'
+import UserIcon from '../assets/icons/UserIcon'
+import Heart from '../assets/icons/Heart'
+import Dollar from '../assets/icons/Dollar'
 
 function Header() {
   return (
@@ -23,10 +22,13 @@ function Header() {
         <input type="text" placeholder='Search products, sellers, deals...' className='w-[650px] border border-gray-300 px-4 py-2 rounded-lg bg-[#1E2127] text-white placeholder:text-white'/>
       </div>
       <div className='flex justify-end gap-5'>
-        <img src={dollar} alt="" className='cursor-pointer'/>
-        <img src={heart} alt="" className='cursor-pointer'/>
-        <img src={bag} alt="" className='cursor-pointer'/>
-        <Image src={userIcon}/>
+        <Dollar/>
+        <Heart/>
+        <Link to={'/cart'} className="relative">
+          <Bag/>
+          <div className="absolute top-[-5px] right-[-10px] w-[23px] h-[23px] rounded-full bg-gradient-to-r from-[#FC00FF] to-[#00DBFF] text-white text-[19px] flex justify-center items-center font-secondary font-bold ">2</div>
+        </Link>
+        <UserIcon/>
       </div>
      </div>
       </div>

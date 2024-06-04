@@ -1,9 +1,11 @@
 import React from 'react'
+import NavBar from '../layouts/NavBar'
 
 function Home() {
   return (
-    <div className='text-3xl'>
-    </div>
+    <>
+    <NavBar/>
+    </>
   )
 }
 

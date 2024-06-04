@@ -4,6 +4,7 @@
 
 body{
     background-color: #1E1E1E;
+    overflow-x: hidden;
 }
 
 .slick-slider .slick-arrow{
@@ -15,13 +16,38 @@ body{
 
 .slick-dots ul li div{
     border: 4px solid rgba(255, 255, 255, 0.67) !important;
+    border-radius: 10px;
 }
 .slick-dots ul li{
     width: 111px !important;
     height: 111px !important;
+    
 }
 .slick-dots .slick-active div{
     scale: 1.2;
     transform:translateY(-20px); ;
     transition: all 0.3s ease-in-out;
 }
+@media(min-width:320px)and (max-width: 640px){
+    .container{
+        max-width: 327px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .slick-dots{
+        bottom: -25% !important;
+    }
+    .slick-dots ul{
+        gap: 15px !important;
+    }
+    .slick-dots ul li div{
+        border: 2px solid rgba(255, 255, 255, 0.67) !important;
+        border-radius: 5px;
+    }
+    .slick-dots ul li{
+        width: 62px !important;
+        height: 62px !important;
+    }
+}
+

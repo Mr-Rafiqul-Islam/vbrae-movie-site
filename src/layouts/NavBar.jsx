@@ -49,13 +49,13 @@ function NavBar() {
                   />
                 </div>
                 {isActive === icon.id && (
-                  <div className="relative">
+                  <div className="relative mb-5">
                     <div
                       className={`flex gap-x-3 -bottom-10 absolute ${
                         isActive === 3 || isActive === 4 ? "right-0" : "left-0"
                       }`}
                     >
-                      <Button2 text={"Playstation"} />
+                      <Button2 text={"Playstation"}  />
                       <Button2 text={"PS4"} />
                       <Button2 text={"PSVR"} />
                     </div>
@@ -82,7 +82,7 @@ function NavBar() {
                     {icon.icon}
                   </div>
                   {isActive === icon.id && (
-                  <div className="relative">
+                  <div className="relative mb-5">
                     <div
                       className={`flex gap-x-3 -bottom-10 absolute ${
                         isActive === 7 || isActive === 8 ? "right-0" : "left-0"

@@ -32,7 +32,6 @@ function Banner() {
       >
         <ul
           style={{
-            margin: "",
             display: "flex",
             gap: "20px",
           }}
@@ -44,40 +43,37 @@ function Banner() {
     customPaging: (i) => (
       <div
         style={{
-          width: "111px",
-          height: "111px",
           display: "grid",
           placeContent: "center",
-          borderRadius: "10px",
           
         }}
       >
         <Image
           src={`src/assets/images/hero${i+1}.png`}
-          className="md:inline-block hidden md:w-[105px] rounded-[14px] md:h-[105px]"
+          className="inline-block w-[62px] h-[62px] md:w-[105px] md:h-[105px] rounded-[5px] md:rounded-[10px] "
         />
       </div>
     ),
   };
   return (
-    <section className="py-10">
+    <section className="">
       <div className="container">
         <div className="relative">
           <Slider {...settings}>
             <div>
-              <Image src={hero1} />
+              <Image src={hero1} className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}/>
             </div>
             <div>
-              <Image src={hero2} />
+              <Image src={hero2} className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}/>
             </div>
             <div>
-              <Image src={hero3} />
+              <Image src={hero3} className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}/>
             </div>
             <div>
-              <Image src={hero4} />
+              <Image src={hero4} className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}/>
             </div>
             <div>
-              <Image src={hero5} />
+              <Image src={hero5} className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}/>
             </div>
           </Slider>
         </div>

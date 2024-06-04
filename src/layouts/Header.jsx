@@ -16,7 +16,7 @@ function Header() {
       <section className="pt-[50px] pb-[37px]">
         <div className="container">
           <div className="flex justify-between">
-            <div className="flex gap-5 items-center ps-4 xl:ps-0">
+            <div className="flex gap-4 items-center">
               
                 <Image src={bar} className={`inline-block md:hidden w-[24px] h-[24px]`}/>
               
@@ -48,7 +48,7 @@ function Header() {
                   2
                 </div>
               </Link>
-              <UserIcon className={"w-[24px] h-[24px] md:w-[40px] md:h-[40px] me-4 lg-me-0"}/>
+              <UserIcon className={"w-[24px] h-[24px] md:w-[40px] md:h-[40px]"}/>
             </div>
           </div>
         </div>

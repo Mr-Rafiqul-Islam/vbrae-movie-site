@@ -5,3 +5,23 @@
 body{
     background-color: #1E1E1E;
 }
+
+.slick-slider .slick-arrow{
+    display: none !important;
+}
+.slick-dots {
+    width: auto !important;
+}
+
+.slick-dots ul li div{
+    border: 4px solid rgba(255, 255, 255, 0.67) !important;
+}
+.slick-dots ul li{
+    width: 111px !important;
+    height: 111px !important;
+}
+.slick-dots .slick-active div{
+    scale: 1.2;
+    transform:translateY(-20px); ;
+    transition: all 0.3s ease-in-out;
+}

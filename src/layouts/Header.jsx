@@ -16,9 +16,9 @@ function Header() {
       <section className="pt-[50px] pb-[37px]">
         <div className="container">
           <div className="flex justify-between">
-            <div className="flex gap-5 items-center">
+            <div className="flex gap-5 items-center ps-4 xl:ps-0">
               
-                <Image src={bar} className={`inline-block md:hidden w-[24px] h-[24px] ms-4`}/>
+                <Image src={bar} className={`inline-block md:hidden w-[24px] h-[24px]`}/>
               
               <Link to={"/"}>
                 <Image src={logo} className="w-[122px] h-[25px] md:w-[213px] md:h-[43px]" />
@@ -29,13 +29,15 @@ function Header() {
               <input
                 type="text"
                 placeholder="Search products, sellers, deals..."
-                className="hidden md:flex  md:w-[300px] lg:w-[750px] border border-gray-300 px-4 py-2 rounded-lg bg-[#1E2127] text-white placeholder:text-white"
+                className="hidden md:flex  md:w-[300px] lg:w-[500px] border border-gray-300 px-4 py-2 rounded-lg bg-[#1E2127] text-white placeholder:text-white"
               />
 
-              <Icon
+              <div className="md:absolute mx-4 md:mx-0 md:top-[10px] md:right-[10px] w-[25px] h-[25px] rounded-full bg-white md:bg-transparent grid place-content-center">
+                <Icon
                 icon={`radix-icons:magnifying-glass`}
-                className="md:text-[#B2B8C2] text-2xl rounded-full md:absolute md:top-[10px] md:right-[10px] cursor-pointer"
-              />
+                className="md:text-[#B2B8C2] text-2xl cursor-pointer"
+                />
+              </div>
             </div>
             <div className="flex justify-end gap-5">
               <Dollar className={"w-[24px] h-[24px] md:w-[40px] md:h-[40px]"}/>

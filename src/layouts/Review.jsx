@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../components/Image";
 import Line from "../assets/icons/revLine.png";
 import ReviewStar from "../assets/icons/ReviewStar.svg";
+import ReviewCard from "../components/ReviewCard";
 
 function Review() {
   return (
@@ -24,6 +25,9 @@ function Review() {
                 />
               </div>
             </div>
+          </div>
+          <div className="w-3/4">
+            <ReviewCard />
           </div>
         </div>
       </div>

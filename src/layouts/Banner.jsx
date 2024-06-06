@@ -25,8 +25,6 @@ function Banner() {
       <div
         style={{
           display: "inline",
-          position: "absolute",
-          bottom: "5%",
           padding: "10px",
         }}
       >
@@ -56,7 +54,7 @@ function Banner() {
     ),
   };
   return (
-    <section className="">
+    <section className="pb-[72px]">
       <div className="container">
         <div className="relative">
           <Slider {...settings}>

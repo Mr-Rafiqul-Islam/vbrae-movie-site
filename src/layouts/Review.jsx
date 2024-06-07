@@ -75,7 +75,7 @@ function Review() {
               </div>
             </div>
           </div>
-          <div className="w-[87%] review">
+          <div className="w-[82%] md:w-[90%] review">
             <Slider {...settings}>
               <ReviewCard
                 img={user1}

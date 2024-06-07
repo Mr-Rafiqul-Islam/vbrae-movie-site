@@ -44,7 +44,7 @@ function Header() {
               <Heart className={"w-[24px] h-[24px] md:w-[40px] md:h-[40px]"}/>
               <Link to={"/cart"} className="relative">
                 <Bag className={"w-[24px] h-[24px] md:w-[40px] md:h-[40px]"}/>
-                <div className="absolute top-[-5px] right-[-10px] w-[23px] h-[23px] rounded-full bg-gradient-to-r from-[#FC00FF] to-[#00DBFF] text-white text-[19px] flex justify-center items-center font-secondary font-bold ">
+                <div className="absolute top-[-5px] right-[-5px] md:right-[-10px] md:w-[23px] md:h-[23px] w-[15px] h-[15px] rounded-full bg-gradient-to-r from-[#FC00FF] to-[#00DBFF] text-white text-[11px] md:text-[19px] flex justify-center items-center font-secondary font-bold ">
                   2
                 </div>
               </Link>

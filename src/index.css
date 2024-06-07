@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .border-gradient {
+    position: relative;
+    padding: 4px; /* Space for border */
+    border-radius: 8px; /* Adjust the border-radius as needed */
+    background-clip: padding-box;
+    z-index: 0;
+  }
+
+  .border-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Adjust the border-radius as needed */
+    padding: 2px; /* Border width */
+    background: linear-gradient(to right, #18C5E1, #8666EF, #FB01FF);
+    z-index: -1;
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+  }
+}
 body {
   background-color: #1e1e1e;
   overflow-x: hidden;

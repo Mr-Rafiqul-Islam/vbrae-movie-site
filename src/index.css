@@ -33,7 +33,9 @@ body {
   background-color: #1e1e1e;
   overflow-x: hidden;
 }
-
+.review .slick-slide > div{
+  margin: 0 15px !important;
+}
 
 .slick-slider .slick-arrow {
   display: none !important;
@@ -58,6 +60,9 @@ body {
 @media (min-width: 320px) and (max-width: 640px) {
   .container {
     max-width: 327px !important;
+  }
+  .review .slick-slide > div{
+    margin: 0 5px !important;
   }
 }
 
@@ -84,4 +89,5 @@ body {
     position: absolute !important;
     bottom: 5%;
   }
+
 }

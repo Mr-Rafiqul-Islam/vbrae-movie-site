@@ -12,6 +12,7 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "react": "^18.2.0",
+    "react_js_coundown_helper": "^1.1.6",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-slick": "^0.30.2",

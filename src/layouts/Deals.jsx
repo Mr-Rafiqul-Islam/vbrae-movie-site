@@ -9,9 +9,9 @@ function Deals() {
   const deadline = new Date('2024-08-31T23:59:59');
   const [seconds, minutes, hours, days] = useCountDownTarget(deadline);
   return (
-    <section className="py-[72px]">
+    <section className="!py-[30px] md:py-[72px]">
       <div className="container">
-        <div className="md:!py-[40px] !py-5 md:!px-[30px] !px-4 md:border-gradient border-none">
+        <div className="md:!py-[40px] !py-5 md:!px-[30px] md:border-gradient border-none">
           {/* upper part starts*/}
           <div className="flex justify-between items-center mb-[11px] md:mb-[35px]" >
             <SubHeading text={`Weekly Deals`} className={`order-1`}/>

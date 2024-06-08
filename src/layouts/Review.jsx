@@ -55,7 +55,7 @@ function Review() {
     ],
   };
   return (
-    <section className="py-[72px]">
+    <section className="md:py-[72px] pt-[72px] pb-[30px]">
       <div className="container">
         <div className="flex">
           <div className="grid place-content-center max-w-[210px]">

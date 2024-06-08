@@ -3,7 +3,7 @@ import cn from '../lib/cn'
 
 function SubHeading({className,text, ...restprops}) {
   return (
-    <h3 className={cn("font-primary font-normal text-base sm:text-[36px] text-white",className)} {...restprops}>{text}</h3>
+    <h3 className={cn("font-primary font-normal text-sm inline-block md:text-[36px] text-white",className)} {...restprops}>{text}</h3>
   )
 }
 

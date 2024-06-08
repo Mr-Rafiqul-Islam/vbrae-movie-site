@@ -3,8 +3,13 @@ import SubHeading from "../components/SubHeading";
 import Button2 from "../components/Button2";
 import Image from "../components/Image";
 import DealsLine from "../assets/images/DealsLine1.png"
+import cardimg1 from "../assets/images/cardimg1.png";
+import cardimg2 from "../assets/images/cardimg2.png";
+import cardimg3 from "../assets/images/cardimg3.png";
+import cardimg4 from "../assets/images/cardimg4.png";
 
 import { useCountDownTarget } from 'react_js_coundown_helper';
+import GamingCard from "../components/GamingCard";
 function Deals() {
   const deadline = new Date('2024-08-31T23:59:59');
   const [seconds, minutes, hours, days] = useCountDownTarget(deadline);
@@ -27,7 +32,12 @@ function Deals() {
           {/* upper part ends */}
 
           {/* lower part starts */}
-
+            <div className="flex gap-2">
+              <GamingCard cardImg={cardimg1} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg2} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg3} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg4} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+            </div>
           {/* lower part ends */}
         </div>
       </div>

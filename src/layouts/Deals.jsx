@@ -7,12 +7,60 @@ import cardimg1 from "../assets/images/cardimg1.png";
 import cardimg2 from "../assets/images/cardimg2.png";
 import cardimg3 from "../assets/images/cardimg3.png";
 import cardimg4 from "../assets/images/cardimg4.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { useCountDownTarget } from 'react_js_coundown_helper';
 import GamingCard from "../components/GamingCard";
 function Deals() {
   const deadline = new Date('2024-08-31T23:59:59');
   const [seconds, minutes, hours, days] = useCountDownTarget(deadline);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        },
+      },
+    ],
+  }
   return (
     <section className="!py-[30px] md:py-[72px]">
       <div className="container">
@@ -32,11 +80,17 @@ function Deals() {
           {/* upper part ends */}
 
           {/* lower part starts */}
-            <div className="flex gap-2">
+            <div className="deal">
+            <Slider {...settings}>
               <GamingCard cardImg={cardimg1} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
               <GamingCard cardImg={cardimg2} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
               <GamingCard cardImg={cardimg3} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
               <GamingCard cardImg={cardimg4} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg1} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg2} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg3} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+              <GamingCard cardImg={cardimg4} title={`Sekiro Shadows Die...`} price={`$59.99`}/>
+            </Slider>
             </div>
           {/* lower part ends */}
         </div>

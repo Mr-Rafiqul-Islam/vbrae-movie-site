@@ -36,7 +36,12 @@ body {
 .review .slick-slide > div{
   margin: 0 15px !important;
 }
-
+.deal .slick-slide > div{
+  margin: 0 5px !important;
+}
+.slick-dots li button{
+  background: white!;
+}
 .slick-slider .slick-arrow {
   display: none !important;
 }

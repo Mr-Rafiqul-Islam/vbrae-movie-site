@@ -9,7 +9,7 @@ import user from "../assets/icons/user.svg";
 import key from "../assets/icons/key.svg";
 function GamingCard({cardImg,title,price}) {
   return (
-    <div className="w-[158px] md:w-[394px] bg-primary rounded-lg p-[6px] md:p-4">
+    <div className=" bg-primary rounded-lg p-[6px] md:p-4">
       <div className="relative">
         <Image className={`w-[146px] md:w-full inline-block`} src={cardImg} />
       </div>

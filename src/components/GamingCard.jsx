@@ -12,6 +12,9 @@ function GamingCard({cardImg,title,price}) {
     <div className=" bg-primary rounded-lg p-[6px] lg:p-4">
       <div className="relative">
         <Image className={`min-w-[146px] lg:w-full inline-block`} src={cardImg} />
+        <div className="!w-11 !h-[22px] xl:!w-[86px] xl:!h-[54px] bg-gradient-to-r from-[#FF0000] to-[#FFC700] grid place-content-center rounded-full absolute top-2 left-2 text-[12px] xl:text-2xl font-secondary font-semibold">
+          -25%
+        </div>
       </div>
       <SubHeading
         className={`mt-2 mb-2.5 lg:mt-4 lg:mb-6 lg:!text-[28px]`}

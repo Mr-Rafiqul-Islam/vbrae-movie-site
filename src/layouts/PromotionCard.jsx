@@ -16,9 +16,9 @@ function PromotionCard({cardImg, cardTitle, iconsArray, fromPrice, toPrice,ratin
             <Image src={cardImg} className={`inline-block min-w-[327px] min-h-[180px]`} />
           </div>
           <div className="bg-primary rounded-lg !p-6 lg:!p-[45px] border-gradient relative">
-            <div className="absolute grid place-content-center text-white bg-third w-[44px] h-[51px] lg:w-[88px] lg:h-[102px] top-0 right-0">
-              <p>Save</p>
-              <p>25%</p>
+            <div className="absolute grid place-content-center text-white bg-third w-[44px] h-[51px] lg:w-[88px] lg:h-[102px] top-0 right-5">
+              <p className="text-[13px] lg:text-[26px] font-secondary">Save</p>
+              <p className="text-[13px] lg:text-[26px] font-secondary">25%</p>
             </div>
             <div className="flex gap-2 items-center min-h-[19px] min-w-[170.58px] max-w-[305.03px] max-h-[33.57px]">
               {iconsArray.map((icon, index) => (

@@ -13,45 +13,45 @@ import Image from '../components/Image';
 function BannerPost({className}) {
   return (
     <div className={`absolute ${className}`}>
-            <div className="flex justify-around w-[161px] md:w-[248px]">
+            <div className="flex justify-around w-[161px] lg:w-[248px]">
               <Image
                 src={ps}
-                className={`w-[21px] h-[21px] md:w-[33px] md:h-[33px]`}
+                className={`w-[21px] h-[21px] lg:w-[33px] lg:h-[33px]`}
               />
               <Image
                 src={xb}
-                className={`w-[21px] h-[21px] md:w-[33px] md:h-[33px]`}
+                className={`w-[21px] h-[21px] lg:w-[33px] lg:h-[33px]`}
               />
               <Image
                 src={Line}
-                className={`w-[21px] h-[21px] md:w-[33px] md:h-[33px]`}
+                className={`w-[21px] h-[21px] lg:w-[33px] lg:h-[33px]`}
               />
               <Image
                 src={user}
-                className={`w-[21px] h-[21px] md:w-[33px] md:h-[33px]`}
+                className={`w-[21px] h-[21px] lg:w-[33px] lg:h-[33px]`}
               />
               <Image
                 src={key}
-                className={`w-[21px] h-[21px] md:w-[33px] md:h-[33px]`}
+                className={`w-[21px] h-[21px] lg:w-[33px] lg:h-[33px]`}
               />
             </div>
-            <Heading className="text-white my-2 md:my-5" text="Death Stranding" />
-            <div className="flex gap-1 md:gap-3">
-              <p className="font-secondary font-normal text-[13px] md:text-[18px] text-white self-end">
+            <Heading className="text-white my-2 lg:my-5" text="Death Stranding" />
+            <div className="flex gap-1 lg:gap-3">
+              <p className="font-secondary font-normal text-[13px] lg:text-[18px] text-white self-end">
                 From
               </p>
-              <h4 className="font-primary font-normal text-[21px] md:text-[28px] text-white line-through">
+              <h4 className="font-primary font-normal text-[21px] lg:text-[28px] text-white line-through">
                 $70
               </h4>
-              <p className="font-secondary font-normal text-[13px] md:text-[18px] text-white self-end">
+              <p className="font-secondary font-normal text-[13px] lg:text-[18px] text-white self-end">
                 to
               </p>
-              <h4 className="font-primary font-normal text-[21px] md:text-[28px] text-third ">
+              <h4 className="font-primary font-normal text-[21px] lg:text-[28px] text-third ">
                 $59.99
               </h4>
-              <Image src={stargrp} className={`!hidden md:!block`} />
+              <Image src={stargrp} className={`!hidden lg:!block`} />
             </div>
-            <Button text={"Shop Now"} className={`flex-row-reverse mt-2 md:mt-5`} icon={<Icon icon="la:cart-plus"/>}/>
+            <Button text={"Shop Now"} className={`flex-row-reverse mt-2 lg:mt-5`} icon={<Icon icon="la:cart-plus"/>}/>
           </div>
   )
 }

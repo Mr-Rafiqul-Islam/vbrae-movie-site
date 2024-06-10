@@ -13,10 +13,10 @@ const iconArray = [
   { icon: "mdi:mouse-scroll-wheel", id: 4 },
 ];
 const iconArrayComponents = [
-  { icon: <Icon1 className={`cursor-pointer md:w-[44px] md:h-[44px] w-6 h-6`} />, id: 5 },
-  { icon: <Icon2 className={`cursor-pointer md:w-[44px] md:h-[44px] w-6 h-6`} />, id: 6 },
-  { icon: <Icon3 className={`cursor-pointer md:w-[44px] md:h-[44px] w-6 h-6`} />, id: 7 },
-  { icon: <Icon4 className={`cursor-pointer md:w-[44px] md:h-[44px] w-6 h-6`} />, id: 8 },
+  { icon: <Icon1 className={`cursor-pointer lg:w-[44px] lg:h-[44px] w-6 h-6`} />, id: 5 },
+  { icon: <Icon2 className={`cursor-pointer lg:w-[44px] lg:h-[44px] w-6 h-6`} />, id: 6 },
+  { icon: <Icon3 className={`cursor-pointer lg:w-[44px] lg:h-[44px] w-6 h-6`} />, id: 7 },
+  { icon: <Icon4 className={`cursor-pointer lg:w-[44px] lg:h-[44px] w-6 h-6`} />, id: 8 },
 ];
 function NavBar() {
   const [isActive, setIsActive] = useState();
@@ -31,13 +31,13 @@ function NavBar() {
       <div className="container">
         <div className="flex">
           {/* 1st col start */}
-          <div className="flex justify-evenly md:border-r-2 border-white w-full">
+          <div className="flex justify-evenly lg:border-r-2 border-white w-full">
             {iconArray.map((icon, index) => (
               <div className="flex flex-col gap-y-5">
                 <div
                   onClick={() => toggleActive(icon.id)}
                   key={index}
-                  className={`grid place-content-center w-[44px] h-[44px] md:w-[87px] md:h-[87px] rounded-lg hover:bg-gradient-to-r from-gradF to-gradT ${
+                  className={`grid place-content-center w-[44px] h-[44px] lg:w-[87px] lg:h-[87px] rounded-lg hover:bg-gradient-to-r from-gradF to-gradT ${
                     isActive === icon.id
                       ? "bg-gradient-to-r from-gradF to-gradT"
                       : ""
@@ -45,7 +45,7 @@ function NavBar() {
                 >
                   <Icon
                     icon={icon.icon}
-                    className={`text-white text-5xl cursor-pointer md:w-[44px] md:h-[44px] w-6 h-6`}
+                    className={`text-white text-5xl cursor-pointer lg:w-[44px] lg:h-[44px] w-6 h-6`}
                   />
                 </div>
                 {isActive === icon.id && (
@@ -66,14 +66,14 @@ function NavBar() {
           </div>
           {/* 1st col end */}
           {/* 2nd col  start*/}
-          <div className="hidden md:flex w-full">
+          <div className="hidden lg:flex w-full">
             <div className="flex justify-evenly border-white w-full">
               {iconArrayComponents.map((icon, index) => (
                 <div className="flex flex-col gap-y-5">
                   <div
                     onClick={() => toggleActive(icon.id)}
                     key={index}
-                    className={`grid place-content-center w-[44px] h-[44px] md:w-[87px] md:h-[87px] rounded-lg hover:bg-gradient-to-r from-gradF to-gradT ${
+                    className={`grid place-content-center w-[44px] h-[44px] lg:w-[87px] lg:h-[87px] rounded-lg hover:bg-gradient-to-r from-gradF to-gradT ${
                       isActive === icon.id
                         ? "bg-gradient-to-r from-gradF to-gradT"
                         : ""

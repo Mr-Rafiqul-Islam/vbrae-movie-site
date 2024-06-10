@@ -50,7 +50,7 @@ function Banner() {
       >
         <Image
           src={`src/assets/images/hero${i + 1}.png`}
-          className="inline-block w-[62px] h-[62px] md:w-[105px] md:h-[105px] rounded-[5px] md:rounded-[10px] "
+          className="inline-block w-[62px] h-[62px] lg:w-[105px] lg:h-[105px] rounded-[5px] lg:rounded-[10px] "
         />
       </div>
     ),
@@ -63,37 +63,37 @@ function Banner() {
             <div className="relative">
               <Image
                 src={hero1}
-                className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}
+                className={`lg:w-full lg:h-auto min-w-[327px] h-[445px]`}
               />
-              <BannerPost className={` bottom-[10%] md:bottom-[40%] left-8 z-10`}/>
+              <BannerPost className={` bottom-[10%] lg:bottom-[40%] left-8 z-10`}/>
             </div>
             <div className="relative">
               <Image
                 src={hero2}
-                className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}
+                className={`lg:w-full lg:h-auto min-w-[327px] h-[445px]`}
               />
-              <BannerPost className={` bottom-[10%] md:bottom-[40%] left-8 z-10`}/>
+              <BannerPost className={`bottom-[10%] lg:bottom-[40%] left-8 z-10`}/>
             </div>
             <div className="relative">
               <Image
                 src={hero3}
-                className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}
+                className={`lg:w-full lg:h-auto min-w-[327px] h-[445px]`}
               />
-              <BannerPost className={` bottom-[10%] md:bottom-[40%] left-8 z-10`}/>
+              <BannerPost className={` bottom-[10%] lg:bottom-[40%] left-8 z-10`}/>
             </div>
             <div className="relative">
               <Image
                 src={hero4}
-                className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}
+                className={`lg:w-full lg:h-auto min-w-[327px] h-[445px]`}
               />
-              <BannerPost className={` bottom-[10%] md:bottom-[40%] left-8 z-10`}/>
+              <BannerPost className={` bottom-[10%] lg:bottom-[40%] left-8 z-10`}/>
             </div>
             <div className="relative">
               <Image
                 src={hero5}
-                className={`md:w-full md:h-auto min-w-[327px] h-[445px]`}
+                className={`lg:w-full lg:h-auto min-w-[327px] h-[445px]`}
               />
-              <BannerPost className={` bottom-[10%] md:bottom-[40%] left-8 z-10`}/>
+              <BannerPost className={` bottom-[10%] lg:bottom-[40%] left-8 z-10`}/>
             </div>
           </Slider>
         </div>

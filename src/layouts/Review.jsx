@@ -38,10 +38,10 @@ function Review() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 640,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -55,27 +55,27 @@ function Review() {
     ],
   };
   return (
-    <section className="md:py-[72px] pt-[72px] pb-[30px]">
+    <section className="lg:py-[72px] pt-[72px] pb-[30px]">
       <div className="container">
         <div className="flex">
           <div className="grid place-content-center max-w-[210px]">
             <div className="text-center">
-              <h3 className="font-third font-bold text-[12px] md:text-[36px] text-white">
+              <h3 className="font-third font-bold text-[12px] lg:text-[36px] text-white">
                 Trustpilot <br /> Reviews
               </h3>
-              <Image src={Line} className={`min-w-[74px] md:my-[10px] my-2`} />
+              <Image src={Line} className={`min-w-[74px] lg:my-[10px] my-2`} />
               <div className="flex gap-2 justify-center items-center">
-                <h5 className="font-third font-bold text-[16px] md:text-[47px] text-[#38AAE6]">
+                <h5 className="font-third font-bold text-[16px] lg:text-[47px] text-[#38AAE6]">
                   5.0
                 </h5>
                 <Image
                   src={ReviewStar}
-                  className={`md:w-[49.82px] w-[18.21px] md:h-[47.38px] h-[17.32px] my-[10px]`}
+                  className={`lg:w-[49.82px] w-[18.21px] lg:h-[47.38px] h-[17.32px] my-[10px]`}
                 />
               </div>
             </div>
           </div>
-          <div className="w-[82%] md:w-[90%] review">
+          <div className="w-[82%] lg:w-[90%] review">
             <Slider {...settings}>
               <ReviewCard
                 img={user1}

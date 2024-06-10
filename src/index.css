@@ -12,7 +12,7 @@
   }
 
   .border-gradient::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -20,11 +20,9 @@
     bottom: 0;
     border-radius: 8px; /* Adjust the border-radius as needed */
     padding: 2px; /* Border width */
-    background: linear-gradient(to right, #18C5E1, #8666EF, #FB01FF);
+    background: linear-gradient(to right, #18c5e1, #8666ef, #fb01ff);
     z-index: -1;
-    mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
   }
@@ -33,13 +31,13 @@ body {
   background-color: #1e1e1e;
   overflow-x: hidden;
 }
-.review .slick-slide > div{
+.review .slick-slide > div {
   margin: 0 15px !important;
 }
-.deal .slick-slide > div{
+.deal .slick-slide > div {
   margin: 0 5px !important;
 }
-.slick-dots li button{
+.slick-dots li button {
   background: white!;
 }
 .slick-slider .slick-arrow {
@@ -66,7 +64,7 @@ body {
   .container {
     max-width: 327px !important;
   }
-  .review .slick-slide > div{
+  .review .slick-slide > div {
     margin: 0 5px !important;
   }
 }
@@ -75,6 +73,13 @@ body {
   .slick-dots {
     position: absolute !important;
     bottom: -25% !important;
+  }
+  .deal .slick-slider .slick-dots {
+    margin-left: 100px !important;
+    color: white !important;
+  }
+  .deal .slick-slider .slick-dots .slick-active {
+    color: white !important;
   }
   .slick-dots ul {
     gap: 15px !important;
@@ -88,11 +93,21 @@ body {
     height: 62px !important;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slick-dots {
+    position: absolute !important;
+    bottom: -25% !important;
+  }
+  .slick-dots ul li {
+    width: 62px !important;
+    height: 62px !important;
+  }
+}
+@media (min-width: 1024px) {
   .slick-dots {
     position: absolute !important;
     bottom: 5%;
   }
-
 }
+
+

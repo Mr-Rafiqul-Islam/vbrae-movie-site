@@ -12,6 +12,7 @@ import key from "../assets/icons/key.svg";
 import user from "../assets/icons/user.svg";
 import sw from "../assets/icons/switch.svg";
 import stargrp from "../assets/icons/stargrp.png";
+import NewArrivals from '../layouts/NewArrivals'
 
 function Home() {
   const iconsArr = [ps4, xbox, sw, line, key, user];
@@ -22,6 +23,7 @@ function Home() {
     <Review/>
     <Deals/>
     <PromotionCard iconsArray={iconsArr} cardImg={promotion1} cardTitle={"The Last Of Us Part II"} discount={`25%`} fromPrice={70} toPrice={59.99} rating={stargrp}/>
+    <NewArrivals/>
     </>
   )
 }

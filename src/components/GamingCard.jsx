@@ -8,9 +8,10 @@ import Line from "../assets/icons/LineHorizontal.svg";
 import user from "../assets/icons/user.svg";
 import key from "../assets/icons/key.svg";
 import heart from "../assets/icons/heart (1).svg"
-function GamingCard({cardImg,title,price}) {
+import cn from "../lib/cn";
+function GamingCard({cardImg,title,price,className}) {
   return (
-    <div className=" bg-primary rounded-lg p-[6px] lg:p-4">
+    <div className={cn("bg-primary rounded-lg p-[6px] lg:p-4",className)}>
       <div className="relative">
         <div className="!w-11 !h-[22px] xl:!w-[86px] xl:!h-[54px] bg-gradient-to-r from-[#FF0000] to-[#FFC700] grid place-content-center rounded-full absolute top-2 left-2 text-[12px] xl:text-2xl font-secondary font-semibold">
           -25%

@@ -7,13 +7,17 @@ import xb from "../assets/icons/xb.svg";
 import Line from "../assets/icons/LineHorizontal.svg";
 import user from "../assets/icons/user.svg";
 import key from "../assets/icons/key.svg";
+import heart from "../assets/icons/heart (1).svg"
 function GamingCard({cardImg,title,price}) {
   return (
     <div className=" bg-primary rounded-lg p-[6px] lg:p-4">
       <div className="relative">
-        <Image className={`min-w-[146px] lg:w-full inline-block`} src={cardImg} />
         <div className="!w-11 !h-[22px] xl:!w-[86px] xl:!h-[54px] bg-gradient-to-r from-[#FF0000] to-[#FFC700] grid place-content-center rounded-full absolute top-2 left-2 text-[12px] xl:text-2xl font-secondary font-semibold">
           -25%
+        </div>
+        <Image className={`min-w-[146px] lg:w-full inline-block`} src={cardImg} />
+        <div className="hidden lg:grid lg:absolute top-1 right-1 bg-white rounded-full w-[54px] h-[54px]  lg:place-content-center">
+          <Image src={heart}/>
         </div>
       </div>
       <SubHeading

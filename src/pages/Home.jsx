@@ -21,7 +21,7 @@ function Home() {
     <Banner/>
     <Review/>
     <Deals/>
-    <PromotionCard iconsArray={iconsArr} cardImg={promotion1} cardTitle={"The Last Of Us Part II"} fromPrice={70} toPrice={59.99} rating={stargrp}/>
+    <PromotionCard iconsArray={iconsArr} cardImg={promotion1} cardTitle={"The Last Of Us Part II"} discount={`25%`} fromPrice={70} toPrice={59.99} rating={stargrp}/>
     </>
   )
 }

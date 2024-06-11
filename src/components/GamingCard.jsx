@@ -16,8 +16,8 @@ function GamingCard({cardImg,title,price}) {
           -25%
         </div>
         <Image className={`min-w-[146px] lg:w-full inline-block`} src={cardImg} />
-        <div className="hidden lg:grid lg:absolute top-1 right-1 bg-white rounded-full w-[54px] h-[54px]  lg:place-content-center">
-          <Image src={heart}/>
+        <div className="hidden lg:grid lg:absolute top-1 right-1 bg-white/80 rounded-full w-[54px] h-[54px]  lg:place-content-center">
+          <Image src={heart} className={'inline-block cursor-pointer'}/>
         </div>
       </div>
       <SubHeading

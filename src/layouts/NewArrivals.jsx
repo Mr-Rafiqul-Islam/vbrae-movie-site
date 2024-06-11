@@ -14,6 +14,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function NewArrivals() {
+  const cardData = [
+    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" },
+  ];
+
   const settings = {
     className: "center",
     infinite: true,
@@ -29,25 +40,25 @@ function NewArrivals() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 757,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }
-    ]
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
   return (
     <section className="!py-[30px] lg:py-[72px]">
@@ -66,106 +77,28 @@ function NewArrivals() {
           {/* lower part starts */}
           <div className="new">
             <div className="block sm:!hidden">
-              <Slider {...settings} >
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg1}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg2}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg3}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg4}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg1}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg2}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg3}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
-                <GamingCard
-                  className={`border-gradient`}
-                  cardImg={cardimg4}
-                  title={`Sekiro Shadows Die...`}
-                  price={`$59.99`}
-                />
+              <Slider {...settings}>
+                {cardData.map((card, index) => (
+                  <GamingCard
+                    key={index}
+                    className="border-gradient"
+                    cardImg={card.img}
+                    title={card.title}
+                    price={card.price}
+                  />
+                ))}
               </Slider>
             </div>
             <div className="sm:grid sm:grid-cols-2 sm:gap-4 gap-2 lg:gap-4 xl:grid-cols-4 hidden">
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg1}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg2}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg3}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg4}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg1}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg2}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg3}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                className={`border-gradient`}
-                cardImg={cardimg4}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
+            {cardData.map((card, index) => (
+            <GamingCard
+              key={index}
+              className="border-gradient"
+              cardImg={card.img}
+              title={card.title}
+              price={card.price}
+            />
+          ))}
             </div>
           </div>
           {/* lower part ends */}

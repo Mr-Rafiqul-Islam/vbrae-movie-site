@@ -60,15 +60,16 @@ body {
   transform: translateY(-20px);
   transition: all 0.3s ease-in-out;
 }
-.clip{
-  clip-path: polygon(100% 26%, 81% 54%, 100% 80%, 25% 80%, 25% 52%, 25% 26%);
-}
+
 @media (min-width: 320px) and (max-width: 640px) {
   .container {
     max-width: 327px !important;
   }
   .review .slick-slide > div {
     margin: 0 5px !important;
+  }
+  .new .slick-slide > div {
+    margin: 10px 5px !important;
   }
 }
 

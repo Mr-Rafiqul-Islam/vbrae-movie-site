@@ -12,6 +12,7 @@ import cardimg4 from "../assets/images/cardimg4.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SectionHeading from "../components/SectionHeading";
 
 function NewArrivals() {
   const cardData = [
@@ -65,14 +66,7 @@ function NewArrivals() {
       <div className="container">
         <div className="lg:!py-[40px] !py-5 lg:!px-[30px]">
           {/* upper part starts*/}
-          <div className="flex justify-between items-center mb-[11px] lg:mb-[35px]">
-            <SubHeading text={`New Arrivals`} className={``} />
-            <Image
-              src={DealsLine}
-              className={`inline-block max-w-[133px] sm:max-w-[350px] lg:max-w-[400px] xl:max-w-[600px] 2xl:max-w-[672px]`}
-            />
-            <Button2 text={`Browse All`} className={``} />
-          </div>
+          <SectionHeading title={`New Arrivals`} btntext={`Browse All`} />
           {/* upper part ends*/}
           {/* lower part starts */}
           <div className="new">

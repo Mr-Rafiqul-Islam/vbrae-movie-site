@@ -69,7 +69,7 @@ function NewArrivals() {
             <SubHeading text={`New Arrivals`} className={``} />
             <Image
               src={DealsLine}
-              className={`inline-block min-w-[133px] lg:max-w-[672px]`}
+              className={`inline-block max-w-[133px] sm:max-w-[350px] lg:max-w-[400px] xl:max-w-[600px] 2xl:max-w-[672px]`}
             />
             <Button2 text={`Browse All`} className={``} />
           </div>

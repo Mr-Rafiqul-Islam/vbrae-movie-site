@@ -54,20 +54,20 @@ function PromotionCard({
             </div>
             <Heading text={cardTitle} className={`my-4`} />
             <div className="flex gap-2 items-center">
-              <div className="w-[30px] lg:w-[53px]">
-                <p className="text-[10px] lg:text-[18px] font-secondary text-secondary">
+              <div className="w-[30px] md:w-10 lg:w-[53px]">
+                <p className="text-[10px] md:text-sm lg:text-[18px] font-secondary text-secondary">
                   From
                 </p>
-                <p className="text-[10px] lg:text-[18px] font-secondary text-secondary line-through">
+                <p className="text-[10px] md:text-sm lg:text-[18px] font-secondary text-secondary line-through">
                   {fromPrice} to
                 </p>
               </div>
-              <h4 className="text-[14px] lg:text-[28px] font-primary text-third">
+              <h4 className="text-[14px] md:text-[21px] lg:text-[28px] font-primary text-third">
                 {toPrice}
               </h4>
               <Image
                 src={rating}
-                className={`inline-block w-[73.29px] h-[11.95px] lg:w-[164.15px] lg:h-[26.77px]`}
+                className={`inline-block w-[73.29px] h-[11.95px] md:w-[108px] md:h-[18.95px] lg:w-[164.15px] lg:h-[26.77px]`}
               />
             </div>
             <Button

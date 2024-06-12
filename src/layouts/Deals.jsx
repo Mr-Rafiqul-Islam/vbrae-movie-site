@@ -71,22 +71,22 @@ function Deals() {
             <Button2 text={`Browse All`} className={`order-3 lg:order-2`} />
             <Image
               src={DealsLine}
-              className={`!inline-block min-w-[133px] lg:max-w-[672px] order-2 lg:order-3`}
+              className={`!inline-block max-w-[133px] sm:max-w-[350px] lg:max-w-[400px] xl:max-w-[600px] 2xl:max-w-[672px] order-2 lg:order-3`}
             />
             <div className="lg:flex gap-3 text-white items-center hidden order-4">
-              <div className="grid place-content-center w-[63.8px] h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary text-2xl">
+              <div className="grid place-content-center lg:w-[49.8px] lg:h-[44px] xl:w-[63.8px] xl:h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary lg:text-[17px] xl:text-2xl">
                 {days}
               </div>
               :
-              <div className="grid place-content-center w-[63.8px] h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary text-2xl">
+              <div className="grid place-content-center lg:w-[49.8px] lg:h-[44px] xl:w-[63.8px] xl:h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary lg:text-[17px] xl:text-2xl">
                 {hours}
               </div>
               :
-              <div className="grid place-content-center w-[63.8px] h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary text-2xl">
+              <div className="grid place-content-center lg:w-[49.8px] lg:h-[44px] xl:w-[63.8px] xl:h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary lg:text-[17px] xl:text-2xl">
                 {minutes}
               </div>
               :
-              <div className="grid place-content-center w-[63.8px] h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary text-2xl">
+              <div className="grid place-content-center lg:w-[49.8px] lg:h-[44px] xl:w-[63.8px] xl:h-[58px] rounded-lg bg-gradient-to-r from-gradF to-gradT text-white font-secondary lg:text-[17px] xl:text-2xl">
                 {seconds}
               </div>
             </div>

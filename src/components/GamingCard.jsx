@@ -9,62 +9,85 @@ import user from "../assets/icons/user.svg";
 import key from "../assets/icons/key.svg";
 import heart from "../assets/icons/heart (1).svg";
 import cn from "../lib/cn";
-function GamingCard({ cardImg, title, price, className }) {
+function GamingCard({
+  cardImg,
+  title,
+  price,
+  className,
+  discount,
+  batchclassName,
+  fromPrice,
+  release,
+  favoriteBtn = false,
+}) {
   return (
     <div
       className={cn("bg-primary rounded-lg p-[6px] sm:p-3 lg:p-4", className)}
     >
       <div className="relative">
-        <div className="!w-11 !h-[22px] xl:!w-[86px] xl:!h-[54px] bg-gradient-to-r from-[#FF0000] to-[#FFC700] grid place-content-center rounded-full absolute top-2 left-2 text-[12px] xl:text-2xl font-secondary font-semibold">
-          -25%
+        <div
+          className={cn(
+            `!w-11 !h-[22px] md:!w-14 2xl:!w-[86px] md:!h-10 2xl:!h-[54px] bg-gradient-to-r from-gradF to-gradT grid place-content-center rounded-full absolute top-2 left-2 text-[12px] md:text-base 2xl:text-2xl font-secondary font-semibold text-white ${
+              discount ? "grid" : "hidden"
+            }`,
+            batchclassName
+          )}
+        >
+          {discount}
         </div>
         <Image
           className={`min-w-[146px] lg:w-full inline-block`}
           src={cardImg}
         />
-        <div className="hidden lg:grid lg:absolute top-1 right-1 bg-white/80 rounded-full w-[54px] h-[54px]  lg:place-content-center">
-          <Image src={heart} className={"inline-block cursor-pointer"} />
-        </div>
+        {favoriteBtn === true && (
+          <div className="hidden lg:grid lg:absolute top-1 right-1 bg-white/80 rounded-full w-[54px] h-[54px]  lg:place-content-center">
+            <Image src={heart} className={"inline-block cursor-pointer"} />
+          </div>
+        )}
       </div>
-      <SubHeading
-        className={`mt-2 mb-2.5 lg:mt-4 lg:mb-6`}
-        text={title}
-      />
-      <div className="flex gap-2 items-center">
-        <div className="w-[30px] md:w-10 lg:w-[53px]">
-          <p className="text-[10px] md:text-sm 2xl:text-[18px] font-secondary text-secondary">
-            From
-          </p>
-          <p className="text-[10px] md:text-sm 2xl:text-[18px] font-secondary text-secondary line-through">
-            $70 to
-          </p>
+      <SubHeading className={`mt-2 mb-2.5 lg:mt-4 lg:mb-6`} text={title} />
+      {!release && (
+        <div className="flex gap-2 items-center">
+          <div className="w-[30px] md:w-10 lg:w-[53px]">
+            <p className="text-[10px] md:text-sm 2xl:text-[18px] font-secondary text-secondary">
+              From
+            </p>
+            <p className="text-[10px] md:text-sm 2xl:text-[18px] font-secondary text-secondary line-through">
+              {fromPrice} to
+            </p>
+          </div>
+          <h4 className="text-[14px] md:text-[21px] 2xl:text-[28px] font-primary text-third">
+            {price}
+          </h4>
+          <div className="flex items-center">
+            <Image
+              src={onestar}
+              className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
+            />
+            <Image
+              src={onestar}
+              className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
+            />
+            <Image
+              src={onestar}
+              className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
+            />
+            <Image
+              src={onestar}
+              className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
+            />
+            <Image
+              src={onestar}
+              className={`opacity-40 w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
+            />
+          </div>
         </div>
-        <h4 className="text-[14px] md:text-[21px] 2xl:text-[28px] font-primary text-third">
-          {price}
-        </h4>
-        <div className="flex items-center">
-          <Image
-            src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
-          />
-          <Image
-            src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
-          />
-          <Image
-            src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
-          />
-          <Image
-            src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
-          />
-          <Image
-            src={onestar}
-            className={`opacity-40 w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
-          />
-        </div>
-      </div>
+      )}
+      {release && (
+        <p className="text-[14px] md:text-[21px] 2xl:text-[28px] font-primary text-third">
+          Released date {release}
+        </p>
+      )}
       <div className="flex justify-center mt-[11px] md:mt-5 lg:7 xl:mt-9">
         <div className="flex gap-3 lg:gap-6">
           <Image

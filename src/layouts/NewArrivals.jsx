@@ -16,14 +16,14 @@ import SectionHeading from "../components/SectionHeading";
 
 function NewArrivals() {
   const cardData = [
-    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" },
-    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" },
+    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
   ];
 
   const settings = {
@@ -79,6 +79,7 @@ function NewArrivals() {
                     cardImg={card.img}
                     title={card.title}
                     price={card.price}
+                    discount={card.discount}
                   />
                 ))}
               </Slider>
@@ -91,6 +92,7 @@ function NewArrivals() {
                   cardImg={card.img}
                   title={card.title}
                   price={card.price}
+                  discount={card.discount}
                 />
               ))}
             </div>

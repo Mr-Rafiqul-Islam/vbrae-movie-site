@@ -17,6 +17,17 @@ function Deals() {
   const deadline = new Date("2024-08-31T23:59:59");
   const [seconds, minutes, hours, days] = useCountDownTarget(deadline);
 
+  const cardData = [
+    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg1, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg2, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg3, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+    { img: cardimg4, title: "Sekiro Shadows Die...", price: "$59.99" ,discount:"-25%" },
+  ];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -96,46 +107,19 @@ function Deals() {
           {/* lower part starts */}
           <div className="deal">
             <Slider {...settings}>
-              <GamingCard
-                cardImg={cardimg1}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg2}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg3}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg4}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg1}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg2}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg3}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
-              <GamingCard
-                cardImg={cardimg4}
-                title={`Sekiro Shadows Die...`}
-                price={`$59.99`}
-              />
+            {cardData.map((card, index) => (
+                  <GamingCard
+                    key={index}
+                    className="border-gradient"
+                    cardImg={card.img}
+                    title={card.title}
+                    fromPrice={`$70`}
+                    price={card.price}
+                    discount={card.discount}
+                    favoriteBtn={true}
+                    batchclassName={`text-black from-[#FF0000] to-[#FFC700]`}
+                  />
+                ))}
             </Slider>
           </div>
           {/* lower part ends */}

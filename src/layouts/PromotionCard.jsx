@@ -25,13 +25,13 @@ function PromotionCard({
             className
           )}
         >
-          <div className="h-auto">
+          <div className="h-auto flex items-center lg:basis-1/2">
             <Image
               src={cardImg}
               className={`inline-block min-w-[327px] min-h-[180px]`}
             />
           </div>
-          <div className="bg-primary rounded-lg !p-6 lg:!p-[45px] border-gradient relative">
+          <div className="bg-primary rounded-lg !p-6 lg:!p-[45px] border-gradient relative lg:basis-1/2">
             <div className="absolute grid place-content-center text-white top-0 lg:right-4 right-3">
               <div className="relative">
                 <Image src={saveBatch} className={`w-[44px] h-[51px] lg:w-[88px] lg:h-[102px]`}/>

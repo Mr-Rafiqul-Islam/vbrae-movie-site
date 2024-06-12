@@ -30,7 +30,7 @@ function Deals() {
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
         },

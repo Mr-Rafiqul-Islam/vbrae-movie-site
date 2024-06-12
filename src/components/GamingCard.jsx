@@ -27,65 +27,65 @@ function GamingCard({ cardImg, title, price, className }) {
         </div>
       </div>
       <SubHeading
-        className={`mt-2 mb-2.5 lg:mt-4 lg:mb-6 lg:!text-[28px]`}
+        className={`mt-2 mb-2.5 lg:mt-4 lg:mb-6`}
         text={title}
       />
       <div className="flex gap-2 items-center">
         <div className="w-[30px] md:w-10 lg:w-[53px]">
-          <p className="text-[10px] md:text-sm lg:text-[18px] font-secondary text-secondary">
+          <p className="text-[10px] md:text-sm 2xl:text-[18px] font-secondary text-secondary">
             From
           </p>
-          <p className="text-[10px] md:text-sm lg:text-[18px] font-secondary text-secondary line-through">
+          <p className="text-[10px] md:text-sm 2xl:text-[18px] font-secondary text-secondary line-through">
             $70 to
           </p>
         </div>
-        <h4 className="text-[14px] md:text-[21px] lg:text-[28px] font-primary text-third">
+        <h4 className="text-[14px] md:text-[21px] 2xl:text-[28px] font-primary text-third">
           {price}
         </h4>
         <div className="flex items-center">
           <Image
             src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] lg:w-[29.44px]`}
+            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
           />
           <Image
             src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] lg:w-[29.44px]`}
+            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
           />
           <Image
             src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] lg:w-[29.44px]`}
+            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
           />
           <Image
             src={onestar}
-            className={`w-[10.53px] md:w-[17.53px] lg:w-[29.44px]`}
+            className={`w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
           />
           <Image
             src={onestar}
-            className={`opacity-40 w-[10.53px] md:w-[17.53px] lg:w-[29.44px]`}
+            className={`opacity-40 w-[10.53px] md:w-[17.53px] xl:w-[24px] 2xl:w-[29.44px]`}
           />
         </div>
       </div>
-      <div className="flex justify-center mt-[11px] md:mt-5 lg:mt-9">
+      <div className="flex justify-center mt-[11px] md:mt-5 lg:7 xl:mt-9">
         <div className="flex gap-3 lg:gap-6">
           <Image
             src={ps}
-            className={`w-[13px] h-[13px] md:w-5 md:h-5 lg:w-[33px] lg:h-[33px]`}
+            className={`w-[13px] h-[13px] md:w-5 md:h-5 xl:w-[33px] xl:h-[33px]`}
           />
           <Image
             src={xb}
-            className={`w-[13px] h-[13px] md:w-5 md:h-5 lg:w-[33px] lg:h-[33px]`}
+            className={`w-[13px] h-[13px] md:w-5 md:h-5 xl:w-[33px] xl:h-[33px]`}
           />
           <Image
             src={Line}
-            className={`w-[13px] h-[13px] md:w-5 md:h-5 lg:w-[33px] lg:h-[33px]`}
+            className={`w-[13px] h-[13px] md:w-5 md:h-5 xl:w-[33px] xl:h-[33px]`}
           />
           <Image
             src={user}
-            className={`w-[13px] h-[13px] md:w-5 md:h-5 lg:w-[33px] lg:h-[33px]`}
+            className={`w-[13px] h-[13px] md:w-5 md:h-5 xl:w-[33px] xl:h-[33px]`}
           />
           <Image
             src={key}
-            className={`w-[13px] h-[13px] md:w-5 md:h-5 lg:w-[33px] lg:h-[33px]`}
+            className={`w-[13px] h-[13px] md:w-5 md:h-5 xl:w-[33px] xl:h-[33px]`}
           />
         </div>
       </div>

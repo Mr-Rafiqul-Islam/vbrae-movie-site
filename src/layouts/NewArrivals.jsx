@@ -89,16 +89,16 @@ function NewArrivals() {
                 ))}
               </Slider>
             </div>
-            <div className="sm:grid sm:grid-cols-2 sm:gap-4 gap-2 lg:gap-4 xl:grid-cols-4 hidden">
-            {cardData.map((card, index) => (
-            <GamingCard
-              key={index}
-              className="border-gradient"
-              cardImg={card.img}
-              title={card.title}
-              price={card.price}
-            />
-          ))}
+            <div className="sm:grid sm:grid-cols-2 sm:gap-4 gap-2 lg:grid-cols-3 lg:h-[800px] lg:overflow-y-hidden lg:gap-4 xl:h-auto xl:grid-cols-4 hidden">
+              {cardData.map((card, index) => (
+                <GamingCard
+                  key={index}
+                  className="border-gradient"
+                  cardImg={card.img}
+                  title={card.title}
+                  price={card.price}
+                />
+              ))}
             </div>
           </div>
           {/* lower part ends */}

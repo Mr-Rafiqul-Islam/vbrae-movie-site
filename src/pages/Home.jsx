@@ -15,6 +15,7 @@ import sw from "../assets/icons/switch.svg";
 import stargrp from "../assets/icons/stargrp.png";
 import NewArrivals from "../layouts/NewArrivals";
 import CommingSoon from "../layouts/CommingSoon";
+import TilesSection from "../layouts/TilesSection";
 
 function Home() {
   const iconsArr = [ps4, xbox, sw, line, key, user];
@@ -45,6 +46,7 @@ function Home() {
         rating={stargrp}
       />
       <CommingSoon/>
+      <TilesSection/>
     </>
   );
 }

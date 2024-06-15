@@ -34,6 +34,9 @@ body {
 .review .slick-slide > div {
   margin: 0 15px !important;
 }
+.upcoming .slick-slide > div {
+  margin: 0 15px !important;
+}
 .deal .slick-slide > div {
   margin: 0 5px !important;
 }
@@ -70,6 +73,9 @@ body {
   }
   .new .slick-slide > div {
     margin: 10px 5px !important;
+  }
+  .upcoming .slick-slide > div {
+    margin: 0 5px !important;
   }
 }
 
